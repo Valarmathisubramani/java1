@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main 
+{
+    public static void main (String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt(),e=0,o=0;
+        int a[]=new int[n];
+        for(int i=0;i<n;a[i++]=s.nextInt());
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]%2==0)
+            {
+                e+=a[i];
+            }
+            else
+            {
+                o+=a[i];
+            }
+        }
+        System.out.println((e>o)?(e-o):(o-e));
+    }
+}
